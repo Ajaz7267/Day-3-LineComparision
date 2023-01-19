@@ -48,6 +48,22 @@ public class LineComparsion {
                 System.out.println("Both lines are Not equal");
             }
 
+        //STEP 4
+//As a fan of geometry, I want to compare two lines based on the end points, So that I know one line is equal, greater or less than the other line.
+// - Using Java compareTo method to compare 2 Lengths is preferable.
+
+            System.out.println("Enter Values to check the lines: ");
+            System.out.println("Enter len01 value: ");
+            double len01 = sc.nextInt();
+            System.out.println("Enter len02 value: ");
+            double len02 = sc.nextInt();
+            if (Double.compare(len01, len02) == 0) {
+                System.out.println("len01=len02");
+            } else if (Double.compare(len01, len02) < 0) {
+                System.out.println("len01 is less than len02");
+            } else {
+                System.out.println("len01 is greater than len02");
+            }
 
 
 
